@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>iQuestion</h2>
+    <div class="list">
+      <ul>
+        <li>Open question</li>
+      </ul>
+      <ul>
+        <li>2</li>
+      </ul>
+      <label> question key</label>
+      <input>
+      <button>find</button>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    // HelloWorld
   }
 }
 </script>
+
+<style scoped>
+  .home{
+    display: grid;
+    place-content: center;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+</style>
